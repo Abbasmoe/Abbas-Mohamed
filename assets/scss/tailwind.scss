@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Writing Custom Styles Tailwind CSS
+// https://tailwindcss.com/docs/adding-custom-styles
+
+// The base layer is for things like reset rules or default styles applied to plain HTML elements.
+@layer tailwind-base {
+  body {
+    @apply font-body;
+  }
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  h4 {
+    @apply text-base;
+  }
+  h5 {
+    @apply text-sm;
+  }
+  h6 {
+    @apply text-xs;
+  }
+}
