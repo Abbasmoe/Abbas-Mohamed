@@ -25,14 +25,20 @@ export default {
     fontFamily: {
       body: ['Montserrat'],
     },
+    extend: {
+      zIndex: {
+        '-1': '-1',
+      },
+    },
     minHeight: {
       // @ts-ignore
       screen: ['100vh /* fallback for Opera, IE and etc. */', '100dvh'],
     },
   },
+
   plugins: [
     tailwindTypography,
-    iconsPlugin({ collections: getIconCollections(['ic']) }),
+    iconsPlugin({ collections: getIconCollections(['mdi']) }),
     dynamicIconsPlugin(),
     daisyui,
   ],

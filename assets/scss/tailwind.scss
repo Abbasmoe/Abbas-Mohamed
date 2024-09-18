@@ -6,7 +6,7 @@
 // https://tailwindcss.com/docs/adding-custom-styles
 
 // The base layer is for things like reset rules or default styles applied to plain HTML elements.
-@layer tailwind-base {
+@layer base {
   body {
     @apply font-body;
   }
@@ -30,5 +30,33 @@
   }
   h6 {
     @apply text-xs;
+  }
+}
+
+// The utilities layer is for small, single-purpose classes that should always take precedence over any other styles.
+@layer utilities {
+  .animate-wavy-slide {
+    @apply relative overflow-hidden pb-[0.5em] after:absolute after:inset-0 after:whitespace-nowrap after:text-transparent after:underline after:decoration-primary after:decoration-wavy after:underline-offset-[0.25em] after:content-[attr(data-text)_attr(data-text)_attr(data-text)] hover:after:animate-[wavy-slide_6s_linear_infinite];
+  }
+  @keyframes wavy-slide {
+    0%,
+    100% {
+      @apply ml-0;
+    }
+    50% {
+      @apply ml-[-51%];
+    }
+  }
+  .wavy-text {
+    @apply underline decoration-primary decoration-wavy underline-offset-[0.3em];
+  }
+  // Hide scrollbar browser compatibility
+  // https://github.com/adoxography/tailwind-scrollbar/blob/main/src/utilities.js
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scrollbars#browser_compatibility
+  .hide-scrollbar::-webkit-scrollbar {
+    @apply hidden;
+  }
+  .hide-scrollbar {
+    scrollbar-width: none;
   }
 }

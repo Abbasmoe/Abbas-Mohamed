@@ -22,7 +22,8 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' },
         { rel: 'shortcut icon', type: 'image/x-icon', href: 'favicon.ico' },
       ],
-    }
+    },
+    pageTransition: { name: 'page', mode: 'out-in' },
   },
 
   compatibilityDate: '2024-04-03',
@@ -38,6 +39,10 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     // https://content.nuxt.com/get-started/installation
     '@nuxt/content',
+    // https://image.nuxt.com/get-started/installation
+    '@nuxt/image',
+    // https://vueuse.org/
+    '@vueuse/nuxt',
   ],
 
   // https://tailwindcss.nuxt.dev/getting-started/options#csspath
