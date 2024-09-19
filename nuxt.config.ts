@@ -6,16 +6,10 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Abbas Mohamed',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Abbas Mohamed - Deine Webseite ist im Internetz!',
-        },
-        { name: 'msapplication-TileColor', content: '#ffffff' },
+        { name: 'msapplication-TileColor', content: '#1D232A' },
         { name: 'theme-color', content: '#6970a5' },
       ],
       link: [
@@ -55,5 +49,14 @@ export default defineNuxtConfig({
     classSuffix: '',
     dataValue: 'theme', // activate data-theme in <html> tag
     preference: 'dark', // default value of $colorMode.preference
+  },
+
+  experimental: {
+    sharedPrerenderData: true,
+    defaults: {
+      useAsyncData: {
+        deep: false,
+      },
+    },
   },
 })

@@ -15,9 +15,9 @@
       </div>
 
       <div class="grow">
-        <h4 class="md:text-xl py-2 font-semibold">Hi 👋, I'm</h4>
-        <h1 class="md:text-4xl xl:text-5xl font-bold">Abbas Mohamed</h1>
-        <p class="max-w-2xl py-6 text-pretty">
+        <h4 class="py-2 font-semibold md:text-xl">Hi 👋, I'm</h4>
+        <h1 class="font-bold md:text-4xl xl:text-5xl">Abbas Mohamed</h1>
+        <p class="max-w-2xl text-pretty py-6">
           Front-End Developer based in Germany. I'm excited to share my recent
           work and the valuable lessons I've learned along the way.
         </p>
@@ -43,7 +43,7 @@
     </div>
 
     <section class="mt-16 flex flex-col gap-6 md:mt-28">
-      <h2 class="md:text-3xl wavy-text font-bold">Recently Blogs</h2>
+      <h2 class="wavy-text font-bold md:text-3xl">Recently Blogs</h2>
 
       <ContentList :query="contentListQuery">
         <template #default="{ list }">
@@ -62,7 +62,7 @@
       <div class="flex">
         <NuxtLink class="group flex items-center gap-2" to="/blog">
           <span
-            class="text-lg md:text-xl font-semibold text-primary transition-colors group-hover:text-base-content"
+            class="text-lg font-semibold text-primary transition-colors group-hover:text-base-content md:text-xl"
           >
             All Blogs
           </span>
@@ -77,6 +77,16 @@
 
 <script setup lang="ts">
 import type { QueryBuilderParams } from '@nuxt/content'
+
+useHead({
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: 'Abbas Mohamed - Your website is on the Internet!',
+    },
+  ],
+})
 
 const contentListQuery: QueryBuilderParams = {
   path: '/blog',

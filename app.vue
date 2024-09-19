@@ -73,21 +73,17 @@
 
     <NuxtPage class="mx-auto w-full max-w-screen-xl" />
 
-    <footer class="footer mt-20 justify-center bg-base-100 p-4">
-      <div
-        class="flex flex-col items-center gap-1 border-t border-t-base-content pt-4"
-      >
-        <p>Made with ❤️ &amp; ☕</p>
-        <p class="text-center">
-          &copy; {{ new Date().getFullYear() }} Copyright
-          <strong>Abbas Mohamed</strong> - All right reserved
-        </p>
-      </div>
-    </footer>
+    <LazyBaseFooter />
   </div>
 </template>
 
 <script setup lang="ts">
+useHead({
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - Abbas Mohamed` : 'Abbas Mohamed'
+  },
+})
+
 const mailto = shallowRef('mailto:abbasmohamedbas@gmailcom')
 
 const hideMenu = () => {
