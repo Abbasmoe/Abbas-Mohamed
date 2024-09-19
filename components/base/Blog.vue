@@ -6,21 +6,17 @@
     ></NuxtLink>
     <div class="flex flex-col">
       <NuxtLink
-        class="text-xl md:text-2xl font-bold transition-colors hover:text-primary"
+        class="text-base font-bold transition-colors hover:text-primary md:text-xl lg:text-2xl"
         :to="blog._path"
       >
         {{ blog.title }}
       </NuxtLink>
-      <p class="opacity-80">{{ blog.description }}</p>
-      <div class="mt-2 flex items-center gap-2 flex-wrap">
+      <p class="text-sm opacity-80 md:text-base">{{ blog.description }}</p>
+      <div class="mt-2 flex flex-wrap items-center gap-2">
         <span class="badge badge-secondary">
           {{ blog.date }}
         </span>
-        <span
-          v-for="tag in blog.tags"
-          class="badge badge-neutral"
-          :key="tag"
-        >
+        <span v-for="tag in blog.tags" class="badge badge-neutral" :key="tag">
           #{{ tag }}
         </span>
       </div>

@@ -1,7 +1,7 @@
 <template>
   <main class="md:mt-18 mt-12 flex flex-col gap-12">
     <div class="flex flex-col gap-16 items-center">
-      <h1 class="wavy-text md:text-4xl font-bold">All Blogs</h1>
+      <h1 class="wavy-text lg:text-4xl font-bold">All Blogs</h1>
       <label class="input input-md input-bordered flex items-center gap-2 w-full">
         <input
           type="search"

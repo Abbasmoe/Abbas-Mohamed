@@ -16,7 +16,7 @@
 
       <div class="grow">
         <h4 class="md:text-xl py-2 font-semibold">Hi 👋, I'm</h4>
-        <h1 class="text-4xl md:text-5xl font-bold">Abbas Mohamed</h1>
+        <h1 class="md:text-4xl xl:text-5xl font-bold">Abbas Mohamed</h1>
         <p class="max-w-2xl py-6 text-pretty">
           Front-End Developer based in Germany. I'm excited to share my recent
           work and the valuable lessons I've learned along the way.
