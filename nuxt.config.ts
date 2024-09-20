@@ -37,7 +37,25 @@ export default defineNuxtConfig({
     '@nuxt/image',
     // https://vueuse.org/
     '@vueuse/nuxt',
+    // https://nuxtseo.com/nuxt-seo/getting-started/installation
+    '@nuxtjs/seo',
   ],
+
+  runtimeConfig: {
+    public: {
+      // TODO. Set up a custom domain later
+      siteurl: 'https://abbas-mohamed.netlify.app/',
+    },
+  },
+
+  site: {
+    // TODO. Set up a custom domain later
+    url: 'https://abbas-mohamed.netlify.app/',
+    name: 'Abbas Mohamed',
+    trailingSlash: true,
+    // TODO. not needed if you have @nuxtjs/i18n installed
+    defaultLocale: 'en',
+  },
 
   // https://tailwindcss.nuxt.dev/getting-started/options#csspath
   tailwindcss: {

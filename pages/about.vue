@@ -77,3 +77,13 @@
     </div>
   </main>
 </template>
+
+<script setup lang="ts">
+const title = 'About me'
+const description = 'Find out more about me as a person'
+
+useSeoMeta({
+  title,
+  description,
+})
+</script>

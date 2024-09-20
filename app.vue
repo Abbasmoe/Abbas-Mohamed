@@ -84,6 +84,13 @@ useHead({
   },
 })
 
+const config = useRuntimeConfig()
+
+useServerSeoMeta({
+  author: 'Abbas Mohamed',
+  ogSiteName: config.public.siteurl,
+})
+
 const mailto = shallowRef('mailto:abbasmohamedbas@gmailcom')
 
 const hideMenu = () => {

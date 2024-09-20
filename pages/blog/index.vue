@@ -1,8 +1,10 @@
 <template>
   <main class="md:mt-18 mt-12 flex flex-col gap-12">
-    <div class="flex flex-col gap-16 items-center">
-      <h1 class="wavy-text lg:text-4xl font-bold">All Blogs</h1>
-      <label class="input input-md input-bordered flex items-center gap-2 w-full">
+    <div class="flex flex-col items-center gap-16">
+      <h1 class="wavy-text font-bold lg:text-4xl">All Blogs</h1>
+      <label
+        class="input input-md input-bordered flex w-full items-center gap-2"
+      >
         <input
           type="search"
           class="grow"
@@ -43,6 +45,15 @@
 </template>
 
 <script setup lang="ts">
+const title = 'Blogs'
+const description =
+  'I am regularly writing blogs about web development (frontend) and other topics.'
+
+useSeoMeta({
+  title,
+  description,
+})
+
 const searchInput = useTemplateRef('search-input')
 
 const keys = useMagicKeys({

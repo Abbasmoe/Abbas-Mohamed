@@ -78,14 +78,12 @@
 <script setup lang="ts">
 import type { QueryBuilderParams } from '@nuxt/content'
 
-useHead({
-  meta: [
-    {
-      hid: 'description',
-      name: 'description',
-      content: 'Abbas Mohamed - Your website is on the Internet!',
-    },
-  ],
+const description = `My Name is Abbas, a Front-End Developer based in Germany. I'm excited to share my recent work and the valuable lessons I've learned along the way.`
+
+useSeoMeta({
+  title: '',
+  ogTitle: 'Abbas Mohamed - Front-End Developer',
+  description,
 })
 
 const contentListQuery: QueryBuilderParams = {

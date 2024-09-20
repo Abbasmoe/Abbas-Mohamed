@@ -16,11 +16,15 @@
             <NuxtImg
               :src="project.image"
               :alt="project.imageAlt"
-              class="h-48 md:h-56 w-full rounded-t-2xl object-cover"
+              class="h-48 w-full rounded-t-2xl object-cover md:h-56"
             />
             <div class="card-body">
-              <h3 class="card-title text-base md:text-xl">{{ project.title }}</h3>
-              <p class="opacity-80 text-sm md:text-base">{{ project.description }}</p>
+              <h3 class="card-title text-base md:text-xl">
+                {{ project.title }}
+              </h3>
+              <p class="text-sm opacity-80 md:text-base">
+                {{ project.description }}
+              </p>
               <div class="card-actions justify-end">
                 <span
                   v-for="tag in project.tags"
@@ -46,6 +50,15 @@
 
 <script setup lang="ts">
 import type { QueryBuilderParams } from '@nuxt/content'
+
+const title = 'Projects'
+const description =
+  'I am working on projects about web development (frontend) and other topics.'
+
+useSeoMeta({
+  title,
+  description,
+})
 
 const contentListQuery: QueryBuilderParams = {
   path: '/project',
