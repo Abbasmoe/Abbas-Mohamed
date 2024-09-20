@@ -89,6 +89,10 @@ useSeoMeta({
   description,
 })
 
+definePageMeta({
+  documentDriven: false
+})
+
 const contentListQuery: QueryBuilderParams = {
   path: '/blog',
   limit: 8,

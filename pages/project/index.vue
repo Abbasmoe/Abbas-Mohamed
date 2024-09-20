@@ -61,6 +61,10 @@ useSeoMeta({
   description,
 })
 
+definePageMeta({
+  documentDriven: false
+})
+
 const contentListQuery: QueryBuilderParams = {
   path: '/project',
   sort: [{ date: -1 }],

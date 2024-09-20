@@ -41,6 +41,13 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
   ],
 
+  content: {
+    documentDriven: true,
+    highlight: {
+      theme: 'vitesse-dark',
+    },
+  },
+
   runtimeConfig: {
     public: {
       // TODO. Set up a custom domain later

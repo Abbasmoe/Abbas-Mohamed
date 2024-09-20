@@ -54,6 +54,10 @@ useSeoMeta({
   description,
 })
 
+definePageMeta({
+  documentDriven: false,
+})
+
 const searchInput = useTemplateRef('search-input')
 
 const keys = useMagicKeys({

@@ -86,4 +86,8 @@ useSeoMeta({
   title,
   description,
 })
+
+definePageMeta({
+  documentDriven: false
+})
 </script>
