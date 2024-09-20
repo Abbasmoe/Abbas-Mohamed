@@ -16,7 +16,11 @@
         <span class="badge badge-secondary">
           {{ blog.date }}
         </span>
-        <span v-for="tag in blog.tags" class="badge badge-neutral" :key="tag">
+        <span
+          v-for="tag in blog.tags"
+          class="badge badge-neutral forced-color-adjust-auto"
+          :key="tag"
+        >
           #{{ tag }}
         </span>
       </div>

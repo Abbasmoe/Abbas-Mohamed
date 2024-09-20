@@ -5,9 +5,9 @@
     <header class="navbar sticky top-0 z-10 bg-base-100 py-4">
       <div class="navbar-start md:hidden">
         <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-circle btn-ghost">
+          <button tabindex="0" class="btn btn-circle btn-ghost">
             <span class="i-[mdi--segment] size-8 rotate-180"></span>
-          </div>
+          </button>
 
           <BaseLinks
             tabindex="0"
@@ -46,10 +46,9 @@
           v-if="$colorMode.unknown"
           class="skeleton h-8 w-8 dark:bg-neutral"
         ></div>
-        <label v-else class="swap swap-rotate" for="colorMode">
+        <label v-else class="swap swap-rotate">
           <!-- this hidden checkbox controls the state -->
           <input
-            id="colorMode"
             type="checkbox"
             class="theme-controller"
             v-model="$colorMode.preference"

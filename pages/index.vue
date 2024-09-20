@@ -8,6 +8,7 @@
           src="/my-image.webp"
           alt="my-image"
           class="h-full w-full max-w-64 md:max-w-sm"
+          :placeholder="[500, 500, 50, 5]" 
         />
         <div
           class="absolute left-0 top-0 -z-1 h-full w-full -rotate-12 rounded-3xl bg-base-300"
@@ -28,7 +29,8 @@
               target="_blank"
               external
               class="i-[mdi--linkedin] size-8"
-            ></NuxtLink>
+              >my linkedin profile</NuxtLink
+            >
           </li>
           <li>
             <NuxtLink
@@ -36,7 +38,8 @@
               target="_blank"
               external
               class="i-[mdi--github] size-8"
-            ></NuxtLink>
+              >my github profile</NuxtLink
+            >
           </li>
         </ul>
       </div>

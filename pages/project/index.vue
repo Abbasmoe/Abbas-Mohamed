@@ -17,6 +17,7 @@
               :src="project.image"
               :alt="project.imageAlt"
               class="h-48 w-full rounded-t-2xl object-cover md:h-56"
+              :placeholder="[250, 250, 50, 5]" 
             />
             <div class="card-body">
               <h3 class="card-title text-base md:text-xl">

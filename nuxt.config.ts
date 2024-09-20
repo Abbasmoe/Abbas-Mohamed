@@ -52,7 +52,6 @@ export default defineNuxtConfig({
     // TODO. Set up a custom domain later
     url: 'https://abbas-mohamed.netlify.app/',
     name: 'Abbas Mohamed',
-    trailingSlash: true,
     // TODO. not needed if you have @nuxtjs/i18n installed
     defaultLocale: 'en',
   },
