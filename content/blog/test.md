@@ -1,10 +1,12 @@
 ---
-title: 'Title of the page'
-description: 'meta description of the page'
+title: 'Transitioning to Height Auto in CSS'
+description: 'How to transition the height in CSS'
 date: 16.09.2024
-readingTime: 7 min read
+timeToRead: 7
 tags: [css, tailwindcss, transition]
 head:
-  title: 'Title of the page'
-  description: 'meta description of the 2'
+  title: 'Transitioning to Height Auto in CSS'
+  description: 'How to transition the height in CSS'
 ---
+
+TEST 
