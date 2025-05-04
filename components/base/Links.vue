@@ -1,30 +1,12 @@
 <template>
   <ul>
-    <li>
+    <li v-for="link in links" :key="link.name">
       <NuxtLink
         class="transition-colors hover:text-primary"
-        to="/blog"
+        :to="link.to"
         @click="$emit('hideMenu')"
       >
-        Blog
-      </NuxtLink>
-    </li>
-    <li>
-      <NuxtLink
-        class="transition-colors hover:text-primary"
-        to="/project"
-        @click="$emit('hideMenu')"
-      >
-        Projects
-      </NuxtLink>
-    </li>
-    <li>
-      <NuxtLink
-        class="transition-colors hover:text-primary"
-        to="/about"
-        @click="$emit('hideMenu')"
-      >
-        About
+        {{ link.name }}
       </NuxtLink>
     </li>
     <slot></slot>
@@ -35,4 +17,15 @@
 defineEmits<{
   hideMenu: []
 }>()
+
+const links = [
+  {
+    name: 'Projects',
+    to: '/project',
+  },
+  {
+    name: 'About',
+    to: '/about',
+  },
+]
 </script>

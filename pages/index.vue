@@ -46,28 +46,28 @@
     </div>
 
     <section class="mt-16 flex flex-col gap-6 md:mt-28">
-      <h2 class="wavy-text font-bold md:text-3xl">Recently Blogs</h2>
+      <h2 class="wavy-text font-bold md:text-3xl">Recently Projects</h2>
 
       <ContentList :query="contentListQuery">
         <template #default="{ list }">
           <ul class="flex flex-col gap-3">
-            <BaseBlog v-for="blog in list" :key="blog._path" :blog="blog" />
+            <BaseProject v-for="project in list" :key="project._path" :project="project" />
           </ul>
         </template>
         <template #empty>
-          <BaseTRex message="No blogs found." />
+          <BaseTRex message="No projects found." />
         </template>
         <template #not-found>
-          <BaseTRex message="No blogs found." />
+          <BaseTRex message="No projects found." />
         </template>
       </ContentList>
 
       <div class="flex">
-        <NuxtLink class="group flex items-center gap-2" to="/blog">
+        <NuxtLink class="group flex items-center gap-2" to="/project">
           <span
             class="text-lg font-semibold text-primary transition-colors group-hover:text-base-content md:text-xl"
           >
-            All Blogs
+            All Projects
           </span>
           <span
             class="i-[mdi--chevron-double-right] size-8 bg-primary transition-colors group-hover:bg-base-content"
@@ -94,7 +94,7 @@ definePageMeta({
 })
 
 const contentListQuery: QueryBuilderParams = {
-  path: '/blog',
+  path: '/project',
   limit: 8,
   sort: [{ date: -1 }],
 }
