@@ -20,6 +20,22 @@
               as well as for effective collaboration with cross-functional
               teams. I am dedicated to lifelong learning and personal growth. 💪
             </p>
+
+           <div class="divider"></div>
+
+            <div class="mt-4 flex flex-col gap-2">
+              <strong class="text-lg">Resume Links 📑</strong>
+
+              <ol
+                class="flex list-inside list-disc flex-col gap-1.5 text-slate-900 dark:text-slate-200"
+              >
+                <li v-for="link in resumeLinks" :key="link.text">
+                  <nuxt-link class="link" target="_blank" :to="link.link">
+                    {{ link.text }} 
+                  </nuxt-link>
+                </li>
+              </ol>
+            </div>
           </div>
         </div>
         <span
@@ -88,6 +104,17 @@ useSeoMeta({
 })
 
 definePageMeta({
-  documentDriven: false
+  documentDriven: false,
 })
+
+const resumeLinks = [
+  {
+    text: 'Auf Deutsch',
+    link: 'https://mega.nz/file/kEUl0aia#Jnz8Ary7MXid83vRub8y_ElUWp6E4FUikyoDpj52cJ8',
+  },
+  {
+    text: 'In English',
+    link: 'https://mega.nz/file/8QdzjIqb#e5p-HBK1eb3KW6DGVkOhf9-_tTohRo5f7jFbiefOF8o',
+  },
+]
 </script>
