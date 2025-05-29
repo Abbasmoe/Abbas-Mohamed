@@ -16,8 +16,8 @@
             <NuxtImg
               :src="project.image"
               :alt="project.imageAlt"
-              class="h-48 w-full rounded-t-2xl object-cover md:h-56"
-              :placeholder="[250, 250, 50, 5]" 
+              class="h-48 w-full rounded-md rounded-t-2xl bg-gray-400 bg-opacity-10 bg-clip-padding object-scale-down backdrop-blur-sm backdrop-filter md:h-56"
+              :placeholder="[250, 250, 50, 5]"
             />
             <div class="card-body">
               <h3 class="card-title text-base md:text-xl">
@@ -26,7 +26,7 @@
               <p class="text-sm opacity-80 md:text-base">
                 {{ project.description }}
               </p>
-              <div class="card-actions justify-end">
+              <div class="card-actions">
                 <span
                   v-for="tag in project.tags"
                   class="badge badge-secondary"
@@ -62,7 +62,7 @@ useSeoMeta({
 })
 
 definePageMeta({
-  documentDriven: false
+  documentDriven: false,
 })
 
 const contentListQuery: QueryBuilderParams = {

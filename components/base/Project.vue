@@ -11,7 +11,7 @@
       >
         {{ project.title }}
       </NuxtLink>
-      <p class="text-sm opacity-80 md:text-base">{{ project.description }}</p>
+      <p class="text-sm opacity-80 md:text-base max-w-2xl">{{ project.description }}</p>
       <div class="mt-2 flex flex-wrap items-center gap-2">
         <span class="badge badge-secondary">
           {{ project.date }}
