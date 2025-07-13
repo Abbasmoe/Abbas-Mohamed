@@ -11,17 +11,17 @@
           <div class="border-t border-base-300 px-6 py-4 dark:border-gray-600">
             <h3 class="text-base font-semibold md:text-xl">Hi, I'm Abbas</h3>
             <p class="mt-1 text-pretty text-sm md:text-base">
-              Experienced <strong>front-end developer 👨‍💻</strong> with proven
+              Experienced <strong>Software developer 👨‍💻</strong> with proven
               expertise in designing user-friendly and appealing web features as
               well as performance optimization of applications. Well versed in
-              modern JavaScript frameworks with a strong ability to actively
-              support the entire software development cycle. Known for
+              modern JavaScript frameworks &amp; PHP with a strong ability to
+              actively support the entire software development cycle. Known for
               high-quality code solutions and a keen eye for appealing design,
               as well as for effective collaboration with cross-functional
               teams. I am dedicated to lifelong learning and personal growth. 💪
             </p>
 
-           <div class="divider"></div>
+            <div class="divider"></div>
 
             <div class="mt-4 flex flex-col gap-2">
               <strong class="text-lg">Resume Links 📑</strong>
@@ -31,7 +31,7 @@
               >
                 <li v-for="link in resumeLinks" :key="link.text">
                   <nuxt-link class="link" target="_blank" :to="link.link">
-                    {{ link.text }} 
+                    {{ link.text }}
                   </nuxt-link>
                 </li>
               </ol>
@@ -49,7 +49,7 @@
             My go-to tech stack includes the following frameworks and libraries.
             While I've also had experience with <strong>GraphQL</strong>,
             <strong>Daisyui</strong>, <strong>Strapi</strong>,
-            <strong>React js</strong>
+            <strong>React js</strong>, <strong>Symfony</strong>
             &amp; Co., these are the tools I'm most comfortable and proficient
             with continuous eager to explore new tools and learn new techniques.
           </p>
@@ -69,6 +69,10 @@
             <li class="flex flex-col items-center gap-2">
               <SvgVue class="size-12" />
               <p class="text-sm">Vue.js</p>
+            </li>
+            <li class="flex flex-col items-center gap-2">
+              <SvgPHP class="size-12" />
+              <p class="text-sm">PHP</p>
             </li>
           </ul>
         </div>

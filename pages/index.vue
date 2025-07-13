@@ -19,7 +19,7 @@
         <h4 class="py-2 font-semibold md:text-xl">Hi 👋, I'm</h4>
         <h1 class="font-bold md:text-4xl xl:text-5xl">Abbas Mohamed</h1>
         <p class="max-w-2xl text-pretty py-6">
-          Front-End Developer based in Germany. I'm excited to share my recent
+          Software Developer based in Germany. I'm excited to share my recent
           work and the valuable lessons I've learned along the way.
         </p>
         <ul class="flex items-center gap-4">
