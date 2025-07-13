@@ -3,7 +3,7 @@ title: 'My Personal Website – Portfolio, Blog & Projects'
 description: 'This is my personal website built with Nuxt 3, Tailwind CSS, and DaisyUI. It includes my blog, portfolio, and side projects in one place.'
 date: 18.09.2024
 tags: [nuxt3, vue, tailwindcss, daisyui, personal-website, portfolio]
-image: https://picsum.photos/id/1/373/224?grayscale
+image: my-website-screenshot.webp
 imageAlt: Portfolio website preview
 ---
 

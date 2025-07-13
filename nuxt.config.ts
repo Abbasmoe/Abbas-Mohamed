@@ -48,10 +48,6 @@ export default defineNuxtConfig({
     },
   },
 
-  image: {
-    domains: ['picsum.photos'], // allow external image
-  },
-
   runtimeConfig: {
     public: {
       // TODO. Set up a custom domain later

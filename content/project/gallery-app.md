@@ -3,7 +3,7 @@ title: 'Gallery App – Vue 2 + Axios + JSON Server'
 description: 'A lightweight image gallery app built with Vue 2 and Axios, using JSON Server as a fake backend for uploading and managing image data.'
 date: 09.21.2021
 tags: [vue, vue2, axios, json-server, image-upload, frontend]
-image: https://picsum.photos/id/91/373/224?grayscale
+image: gallery-app-screenshot.webp
 imageAlt: Galerie App Logo
 ---
 

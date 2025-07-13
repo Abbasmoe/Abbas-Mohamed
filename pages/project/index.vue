@@ -14,7 +14,7 @@
             class="card max-w-96 bg-base-100 shadow-xl transition-shadow duration-300 hover:shadow-2xl"
           >
             <NuxtImg
-              :src="project.image"
+              :src="`img/${project.image}`"
               :alt="project.imageAlt"
               class="h-48 w-full rounded-md rounded-t-2xl bg-gray-400 bg-opacity-10 bg-clip-padding object-scale-down backdrop-blur-sm backdrop-filter md:h-56"
               :placeholder="[250, 250, 50, 5]"
