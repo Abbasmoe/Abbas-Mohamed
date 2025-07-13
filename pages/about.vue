@@ -114,11 +114,11 @@ definePageMeta({
 const resumeLinks = [
   {
     text: 'Auf Deutsch',
-    link: 'https://mega.nz/file/kEUl0aia#Jnz8Ary7MXid83vRub8y_ElUWp6E4FUikyoDpj52cJ8',
+    link: 'https://mega.nz/file/0EF2gJqY#MjSeHJDWTGuXjqGVsqa3dUyeEYK5hOvLqkPh1XOaJdM',
   },
   {
     text: 'In English',
-    link: 'https://mega.nz/file/8QdzjIqb#e5p-HBK1eb3KW6DGVkOhf9-_tTohRo5f7jFbiefOF8o',
+    link: 'https://mega.nz/file/JJkmlRzL#1_43mjxEa2tuSxVr0tiiEmnLR_UpxBsImtBHVIoTSAE',
   },
 ]
 </script>
