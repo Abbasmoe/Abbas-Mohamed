@@ -7,18 +7,33 @@ image: gallery-app-screenshot.webp
 imageAlt: Galerie App Logo
 ---
 
-## 📸 Gallery App
+### 📸 Gallery App
 
-This is a personal project I've been working on to explore **legacy Vue 2 development** with **Axios** and **JSON Server** as a mock API backend.
+This is a personal project I built to explore and reinforce concepts around **Vue 2**, **API integration with Axios**, and using **JSON Server** to simulate a backend. It's a minimal but functional **image gallery application**, ideal for learning how to build CRUD-based frontends without setting up a full backend stack.
 
-The app allows users to upload images and manage gallery entries stored in a JSON file, simulating a real database. It’s a great starting point for experimenting with frontend CRUD operations without needing a full backend setup.
+The core idea was to create a clean, responsive interface that lets users upload images, view them in a gallery layout, and manage them easily. It’s also a good example of working with legacy frontend tech that’s still widely used in older codebases.
 
 ### 🔧 Technologies Used
 
-- Vue 2
-- Axios
-- JSON Server
-- SCSS/CSS
+- **Vue 2** – JavaScript framework for building UI
+- **Axios** – For handling all HTTP requests to the mock API
+- **JSON Server** – Lightweight mock REST API server using local JSON files
+- **SCSS/CSS** – For simple, clean styling
+
+---
+
+### 🧠 Why I Built It
+
+While modern Vue 3 and frameworks like Nuxt 3 dominate the current frontend landscape, Vue 2 is still maintained and present in many real-world projects. I wanted a simple environment to practice:
+
+- Making **API calls** with Axios
+- Handling **form submissions and file uploads**
+- Simulating **data persistence** with a fake backend
+- Structuring a clean, **component-based SPA**
+
+The result is this Gallery App — quick to spin up, easy to extend, and great for prototyping.
+
+---
 
 ### 🚀 Getting Started
 
@@ -27,7 +42,7 @@ To start the project locally:
 ```bash
 npm install
 npm run serve
-````
+```
 
 In a separate terminal, run:
 
@@ -41,10 +56,10 @@ This will start the fake backend at `http://localhost:3000`.
 
 ✅ Features:
 
-* Upload and list images
-* Basic gallery layout
-* Uses mock data with JSON Server
-* Built as a single-page app (SPA)
+- Upload and list images
+- Basic gallery layout
+- Uses mock data with JSON Server
+- Built as a single-page app (SPA)
 
 This project is useful for learning how frontend apps interact with APIs and how local JSON servers can simulate a full backend for testing.
 

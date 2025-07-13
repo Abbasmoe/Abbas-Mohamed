@@ -7,7 +7,7 @@ image: my-website-screenshot.webp
 imageAlt: Portfolio website preview
 ---
 
-## ✨ My Personal Website – Blog, Portfolio & Projects
+### ✨ My Personal Website – Blog, Portfolio & Projects
 
 Welcome to my personal corner on the web.  
 This site serves as a central hub for my **blog posts**, **project showcases**, and general updates about my work and interests in tech.
@@ -18,11 +18,23 @@ This site serves as a central hub for my **blog posts**, **project showcases**, 
 
 ### 🤹‍♂️ Tech Stack
 
-This site is powered by a modern and fast frontend stack:
+The site is built using a clean, lightweight modern frontend stack designed for speed, scalability, and ease of use:
 
-- [Nuxt.js 3](https://nuxt.com/) – Vue-based full-stack framework
-- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework
-- [DaisyUI](https://daisyui.com/) – Beautiful, ready-to-use Tailwind components
+- **[Nuxt.js 3](https://nuxt.com/)** – Vue-based full-stack framework, perfect for server-side rendering, static site generation, and everything in between.
+- **[Tailwind CSS](https://tailwindcss.com/)** – Utility-first CSS framework that enables rapid UI development with clean, readable class-based design.
+- **[DaisyUI](https://daisyui.com/)** – A powerful Tailwind plugin that provides pre-styled components, helping me build a functional UI quickly without writing custom components from scratch.
+
+This combination gives me full control over design while maintaining flexibility for future improvements.
+
+---
+
+### 📚 What You’ll Find Here
+
+- **Portfolio** – A showcase of projects I’ve built, ranging from small experiments to more structured applications.
+- **Side Projects** – I believe learning by building is key, so this section includes tools, micro-apps, and utilities I’ve created for fun or experimentation.
+- **Playground & Snippets** – Small reusable code snippets, UI patterns, and quick tests live here too.
+
+Whether you’re a fellow developer or someone curious about what I build — feel free to explore.
 
 ---
 
@@ -34,7 +46,7 @@ Install dependencies:
 
 ```bash
 npm install
-````
+```
 
 Start the development server:
 
