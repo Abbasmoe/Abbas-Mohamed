@@ -67,6 +67,6 @@ definePageMeta({
 
 const contentListQuery: QueryBuilderParams = {
   path: '/project',
-  sort: [{ date: -1 }],
+  sort: [{ date: -1, $numeric: true }],
 }
 </script>

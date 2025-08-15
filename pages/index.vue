@@ -95,7 +95,7 @@ definePageMeta({
 
 const contentListQuery: QueryBuilderParams = {
   path: '/project',
-  limit: 8,
-  sort: [{ date: -1 }],
+  limit: 3,
+  sort: [{ date: -1, $numeric: true }],
 }
 </script>
