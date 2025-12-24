@@ -13,7 +13,7 @@ Welcome to my **University Projects Archive**, a collection of work developed al
 
 These projects were created to apply theoretical knowledge in a practical setting, focusing on enhancing my development skills and experimenting with UI/UX design. This repository highlights my initiative to redesign existing institutional tools and build a personal digital presence using the technologies I was mastering at the time.
 
-🌍 **[View Main CV Website](http://abalebenslauf.surge.sh/)**
+🌍 **[View Main CV Website](https://abalebenslauf.surge.sh/)**
 
 ---
 
@@ -46,10 +46,10 @@ These projects demonstrate a proactive approach to learning by rebuilding and im
 You can explore the live versions of these archived projects via the links below:
 
 1.  **Main CV / Portfolio:**
-    [Visit Website](http://abalebenslauf.surge.sh/)
+    [Visit Website](https://abalebenslauf.surge.sh/)
 
 2.  **University Webmail Redesign:**
-    [Visit Website](http://email-uni-page-ms.surge.sh/)
+    [Visit Website](https://email-uni-page-ms.surge.sh/)
 
 3.  **University Webmail Login Portal:**
     [Visit Website](https://email-login-page.surge.sh/)
